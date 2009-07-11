@@ -1,8 +1,5 @@
-/*
- * Mockingbird
- * Copyright (c) 2009 Chad Auld (opensourcepenguin.net)
- * Licensed under the MIT license.
- */
+Copyright (c) 2009 Chad Auld (opensourcepenguin.net)
+Licensed under the MIT license
  
 # Mockingbird README #
 
