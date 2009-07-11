@@ -1,4 +1,4 @@
-Copyright (c) 2009 Chad Auld (opensourcepenguin.net)
+Copyright (c) 2009 Chad Auld ([opensourcepenguin.net](http://opensourcepenguin.net))
 Licensed under the MIT license
  
 # Mockingbird README #
@@ -25,7 +25,7 @@ the page it lives on.  Here is a [live demo](http://opensourcepenguin.net/experi
 
 ## HOW IT WORKS ##
 
-1.  Mockingbird uses [http://developer.yahoo.com/yql/](YQL) to get the contents of the 
+1.  Mockingbird uses [YQL](http://developer.yahoo.com/yql/) to get the contents of the 
     web page that it lives on
 2.  The page content is them passed to the [Yahoo! Term Extraction Web 
     Service](http://developer.yahoo.com/search/content/V1/termExtraction.html)
