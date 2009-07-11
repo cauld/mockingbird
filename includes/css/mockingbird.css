@@ -1,0 +1,47 @@
+/*
+ * Mockingbird
+ * Copyright (c) 2009 Chad Auld (opensourcepenguin.net)
+ * Licensed under the MIT license.
+ */
+ 
+#mockingbird .mockingbird-feed-title {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+#mockingbird-container {
+    width: 300px;
+    border: 1px solid #D3D3D3;
+    background-color: #F2F2F2;
+}
+
+#mockingbird .mockingbird-container-left {
+    float: left;
+    width: 50px;
+    border-top: 1px solid #D3D3D3;
+    padding: 15px 10px 0 5px;
+}
+
+#mockingbird .mockingbird-container-right {
+    float: left;
+    width: 235px;
+    border-top: 1px solid #D3D3D3;
+}
+
+#mockingbird .mockingbird-body {
+    clear: both;
+    font-size: 80%;
+    height: 90px;
+}
+
+#mockingbird .mockingbird-date {
+    padding-top: 5px;
+    display: block;
+}
+
+#mockingbird .mockingbird-footer {
+    clear: both;
+    font-size: 70%;
+    padding-top: 5px;
+}
+

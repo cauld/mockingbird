@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Mockingbird: Sample Implementation</title>
+    <!-- YUI reset-fonts-grids are not require, just used to format this sample page. -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+    <!--Yes you wouldn't normally use inline styles.  These are just for the sample page and not related to mockingbird itself. -->
+    <style tyle="text/css">
+        h1 { font-size: 131%; }
+        h2 { font-size: 116%; }
+        h3 { font-size: 108%; }
+        h1, h2, h3 { font-weight: bold; }
+        #hd { margin-bottom: 10px; }
+        p { margin: 10px 0; }
+        ol li { list-style-type: decimal; list-style-position: inside;}
+    </style>
+    
+    <!-- This is the CSS required by Mockingbird -->
+    <link rel="stylesheet" href="includes/css/mockingbird-min.css" type="text/css">
+</head>
+<body>
+<div id="doc2" class="yui-t6">
+    <div id="hd">
+        <h1>
+            Mockingbird: Sample Implementation
+        </h1>
+    </div>
+    <div id="bd">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="yui-u first">
+                        <h2>Sample Article 1: About the iPhone</h2>
+                        <p>
+                           Lets pretend this is a really good article all about how great Apple is and how much we love the iPhone... <br>
+                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas sit amet metus. Nunc quam elit, posuere nec, 
+                           auctor in, rhoncus quis, dui. Aliquam erat volutpat. Ut dignissim, massa sit amet dignissim cursus, quam lacus feugiat.
+                        </p>
+                    </div>
+                    <div class="yui-u">
+                        <h2>Sample Article 2: About Coffee</h2>
+                        <p>
+                           Lets pretend this is a really good article all about how great coffee is and how much programmers need it to live... <br>
+                           Lorem ipsum dolor sit coffee, consectetuer coffee elit. Maecenas sit amet metus. coffee quam elit, posuere nec, 
+                           auctor in, rhoncus coffee, dui. Aliquam erat volutpat. Ut coffee, massa sit amet coffee cursus, quam coffee feugiat.
+                        </p>
+                    </div>
+                </div>
+                <div class="yui-g">
+                    <h2>Sample Article 3: About Mockingbird</h2>
+                    <p>
+                        Mockingbird is a JavaScript Twitter widget that displays related tweets based on the content of 
+                        the page it lives on.
+                    </p>
+                        
+                    <h3>How does it work?</h3>
+                    <ol>
+                        <li>Mockingbird uses <a href="http://developer.yahoo.com/yql/">YQL</a> to get the contents of the 
+                            web page that it lives on</li>
+                        <li>The page content is them passed to the <a href="http://developer.yahoo.com/search/content/V1/termExtraction.html">Yahoo! Term Extraction Web 
+                            Service</a></li>
+                        <li>The top 3 page keyword terms are then used to to construct a <a href="http://apiwiki.twitter.com/Twitter-API-Documentation">search 
+                            against Twitter</a></li>
+                        <li>The JavaScript makes heavy use of the <a href="http://developer.yahoo.com/yui/">Yahoo! User Interface 
+                            library (YUI)</a></li>
+                    </ul>
+                    <p>
+                        Most of the content on this sample page is just dummy data.  However, there are a few key terms Mockingbird 
+                        should pickup on.  If everything works as expected you should see tweets relating to any of the following
+                        topics; the iPhone, Twitter, Yahoo!, coffee, Mockingbird, etc.  If you sit on this page for a while you'll notices the 
+                        tweets refresh every 60 seconds or so.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="yui-b">
+            
+            <!-- This is the main div of the sample.  Put this in your layout where you want the widget to go. -->
+            <div id="mockingbird">
+        	    <h2 class="mockingbird-feed-title">Related Tweets</h2>
+                <div id="mockingbird-container"><p>Loading Related Tweets...</p></div>
+        		<div class="mockingbird-footer">
+        		    Powered by <a href="http://github.com/cauld/mockingbird/tree/master">Mockingbird</a>
+        		</div>
+        	</div>
+        	
+        </div>
+    </div>
+    <div id="ft">
+        <p>
+            Download Mockingbird from Github <a href="http://github.com/cauld/mockingbird/tree/master">here</a>. 
+        </p>
+    </div>
+</div>
+
+<!-- These are the JavaScript files required by Mockingbird -->
+<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.7.0/build/yahoo-dom-event/yahoo-dom-event.js&2.7.0/build/animation/animation-min.js&2.7.0/build/connection/connection-min.js&2.7.0/build/datasource/datasource-min.js&2.7.0/build/json/json-min.js"></script>
+<script type="text/javascript" src="includes/js/mockingbird-min.js"></script>
+</body>
+</html>
