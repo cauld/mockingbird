@@ -4,7 +4,7 @@ Licensed under the MIT license
 # Mockingbird README #
 
 A JavaScript Twitter widget that displays related tweets based on the content of 
-the page it lives on.
+the page it lives on.  Here is a [live demo](http://opensourcepenguin.net/experiments/mockingbird/).
 
 ## SETUP ##
 
@@ -21,18 +21,18 @@ the page it lives on.
 
 ## REQUIREMENTS ##
 1.  PHP >=5.2 with json and curl support
-2.  A Yahoo! Web Services App ID - https://developer.yahoo.com/wsregapp/
+2.  A Yahoo! Web Services App ID - [https://developer.yahoo.com/wsregapp/](https://developer.yahoo.com/wsregapp/)
 
 ## HOW IT WORKS ##
 
-1.  Mockingbird uses YQL (http://developer.yahoo.com/yql/) to get the contents of the 
+1.  Mockingbird uses [http://developer.yahoo.com/yql/](YQL) to get the contents of the 
     web page that it lives on
-2.  The page content is them passed to the Yahoo! Term Extraction Web 
-    Service (http://developer.yahoo.com/search/content/V1/termExtraction.html)
-3.  The top 3 page keyword terms are then used to to construct a search 
-    against Twitter (http://apiwiki.twitter.com/Twitter-API-Documentation)
-4.  The JavaScript makes heavy use of the Yahoo! User Interface 
-    library (YUI) - http://developer.yahoo.com/yui/
+2.  The page content is them passed to the [Yahoo! Term Extraction Web 
+    Service](http://developer.yahoo.com/search/content/V1/termExtraction.html)
+3.  The top 3 page keyword terms are then used to to construct a [search 
+    against Twitter](http://apiwiki.twitter.com/Twitter-API-Documentation)
+4.  The JavaScript makes heavy use of the [Yahoo! User Interface 
+    library, YUI](http://developer.yahoo.com/yui/)
 
 Being that Mockingbird makes use of these 3rd party services please make sure you 
 have read and understood their TOS agreements.
